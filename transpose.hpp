@@ -10,6 +10,7 @@
 #include <range/v3/view/all.hpp>
 #include <range/v3/view/chunk.hpp>
 #include <range/v3/view/transform.hpp>
+#include <range/v3/algorithm/for_each.hpp>
 
 using namespace ranges;
 
