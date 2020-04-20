@@ -47,6 +47,7 @@ struct interleave_view<Rngs>::cursor {
         return its_.end() != std::mismatch(
             its_.begin(), its_.end(), ends.begin(), std::not_equal_to<>{}).first;
     }
+    CPP_member
     auto equal(cursor const& that) const -> CPP_ret(bool)(
         requires forward_range<range_value_t<Rngs>>) {
         return n_ == that.n_ && its_ == that.its_;
