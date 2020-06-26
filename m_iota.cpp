@@ -1,3 +1,5 @@
+// https://www.godbolt.org/z/RMN5aD
+
 #include <vector>
 #include <iostream>
 #include <algorithm>
