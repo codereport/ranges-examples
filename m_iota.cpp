@@ -1,4 +1,4 @@
-// https://www.godbolt.org/z/RMN5aD
+// https://www.godbolt.org/z/SGWhAE
 
 #include <vector>
 #include <iostream>
@@ -17,10 +17,12 @@ auto print(auto t) {
 
 int main() {
 
-    std::vector v = { 4, 2, 3 };
+    std::vector const v = { 4, 2, 3 };
     
     {
-        auto n = std::accumulate(v.cbegin(), v.cend(), 0);
+        // Solution 1
+
+        auto const n = std::accumulate(v.cbegin(), v.cend(), 0);
         std::vector ans(n, 0);
         std::for_each(v.cbegin(), v.cend(), 
             [&, start = ans.begin()](auto val) mutable {
@@ -32,6 +34,8 @@ int main() {
     }
 
     {
+        // Solution 2
+
         std::vector<int> ans;
         std::for_each(v.cbegin(), v.cend(), 
             [&](auto val) {
@@ -44,7 +48,9 @@ int main() {
     }
 
     {
-        auto n = std::accumulate(v.cbegin(), v.cend(), 0);
+        // Solution 3
+
+        auto const n = std::accumulate(v.cbegin(), v.cend(), 0);
         std::vector ans(n, 1);
         std::for_each(v.cbegin(), v.cend() - 1, 
             [&, pos = 0](auto val) mutable {
@@ -57,7 +63,9 @@ int main() {
     }
 
     {
-        auto ans = v 
+        // Solution 4 (Ranges for the win)
+
+        auto const ans = v 
             | rv::transform([](auto val) { return rv::iota(1, val + 1); })
             | rv::join;
             
