@@ -1,4 +1,4 @@
-|View|Status|
+|View/Feature|Status|
 |:-:|:-:|
 |`adjacent`|:red_circle:|
 |`adjacent_transform`|:red_circle:|
@@ -11,6 +11,8 @@
 |`stride`|:yellow_circle: PR https://github.com/microsoft/STL/pull/2981|
 |`zip`|:red_circle: PR: https://github.com/microsoft/STL/pull/3035|
 |`zip_transform`|:red_circle:| 
+|`ranges::to`|:red_circle:|
+|Formatting|:red_circle:|
 
 ```cpp
 
