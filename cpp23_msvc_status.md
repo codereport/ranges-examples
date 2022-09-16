@@ -14,58 +14,31 @@
 |`ranges::to`|:red_circle:|
 |Formatting|:red_circle:|
 
+Godbolt: https://godbolt.org/z/q1hdYzjMe
+
 ```cpp
 
-#include <iostream>.
-#include <vector>
+#include <iostream>
 #include <ranges>
-// #include <string>
+#include <vector>
 
-// using namespace std::string_literals;
 using namespace std::views;
 
-auto chunk_example() {
-	for (auto c : iota(0, 5) | chunk(2)) {
-		for (auto i : c) {
-			std::cout << i << ' ';
-		}
-		std::cout << '\n';
-	}
+auto print(auto rng) {
+    for (auto r : rng) {
+        for (auto e : r) {
+            std::cout << e << ' ';
+        }
+        std::cout << '\n';
+    }
 }
-
-auto chunk_by_example() {
-	auto const vec = std::vector{ 0, 0, 1, 1, 2, 2 };
-	for (auto c : vec | chunk_by(std::equal_to{})) {
-		for (auto i : c) {
-			std::cout << i << ' ';
-		}
-		std::cout << '\n';
-	}
-}
-
-auto slide_example() {
-	for (auto c : iota(0, 5) | slide(3)) {
-		for (auto i : c) {
-			std::cout << i << ' ';
-		}
-		std::cout << '\n';
-	}
-}
-
-//auto zip_example() {
-//	for (auto [x, y] : zip(iota(0, 5), iota(10, 15)) {
-//		std::cout << x << ',' << y << '\n';
-//	}
-//}
 
 auto main() -> int {
+    auto const vec = std::vector{0, 0, 1, 1, 2, 2};
 
-	chunk_example();    // [[0,1],[2,3],[5]]
-	chunk_by_example(); // [[0,0],[1,1],[2,2]]
-	slide_example();    // [[0,1,2],[1,2,3],[3,4,5]]
-	//zip_example();
-
-	return 0;
+    print(iota(0, 5) | chunk(2));            // [[0,1  ], [2,3  ],[5    ]]
+    print(vec | chunk_by(std::equal_to{}));  // [[0,0  ], [1,1  ],[2,2  ]]
+    print(iota(0, 5) | slide(3));            // [[0,1,2], [1,2,3],[3,4,5]]
 }
 
 ```
