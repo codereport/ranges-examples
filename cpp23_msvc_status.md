@@ -9,7 +9,7 @@
 |`repeat`|:red_circle: Issue: https://github.com/microsoft/STL/issues/2933|
 |`slide`|:green_circle:|
 |`stride`|:yellow_circle: PR https://github.com/microsoft/STL/pull/2981|
-|`zip`|:red_circle: PR: https://github.com/microsoft/STL/pull/3035|
+|`zip`|:yellow_circle: PR: https://github.com/microsoft/STL/pull/3035|
 |`zip_transform`|:red_circle:| 
 |`ranges::to`|:red_circle:|
 |Formatting|:red_circle:|
