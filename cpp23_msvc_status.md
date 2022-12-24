@@ -2,17 +2,22 @@
 |:-:|:-:|:-:|
 |`adjacent`|:red_circle:|
 |`adjacent_transform`|:red_circle:|
-|`cartesian_product`|:red_circle: Issue: https://github.com/microsoft/STL/issues/2923|
+|`cartesian_product`|:red_circle: |Issue: https://github.com/microsoft/STL/issues/2923|
 |`chunk`|:green_circle:|
 |`chunk_by`|:green_circle:|
 |`join_with`|:green_circle: | PR: https://github.com/microsoft/STL/pull/2619|
-|`repeat`|:red_circle: Issue: https://github.com/microsoft/STL/issues/2933|
+|`repeat`|:orange_circle: |PR: https://github.com/microsoft/STL/pull/3142|
 |`slide`|:green_circle:|
 |`stride`|:green_circle: | PR: https://github.com/microsoft/STL/pull/2981|
-|`zip`|:green_circle: | PR: https://github.com/microsoft/STL/pull/3035|
+|`zip`|:yellow_circle: | PR: https://github.com/microsoft/STL/pull/3035|
 |`zip_transform`|:red_circle:| 
 |`ranges::to`|:red_circle:|
 |Formatting|:red_circle:|
+
+* 🔴 - Not Done
+* 🟠 - Started
+* 🟡 - Done but not available on Godbolt yet
+* 🟢 - Done
 
 Godbolt: https://godbolt.org/z/q1hdYzjMe
 
