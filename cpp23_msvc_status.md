@@ -19,7 +19,7 @@
 * 🟡 - Done but not available on Godbolt yet
 * 🟢 - Done
 
-Godbolt: https://godbolt.org/z/4fE8GvshY
+Godbolt: https://godbolt.org/z/6oj3d5TnK
 
 ```cpp
 #include <iostream>
@@ -48,7 +48,7 @@ auto main() -> int {
     print2(iota(0, 5) | chunk(2));            // [[0,1  ], [2,3  ],[5    ]]
     print2(vec | chunk_by(std::equal_to{}));  // [[0,0  ], [1,1  ],[2,2  ]]
     print2(iota(0, 5) | slide(3));            // [[0,1,2], [1,2,3],[3,4,5]]
-    print (iota(0, 10) | stride(3));          // [0, 3, 6, 9]
+    print (iota(0, 10) | stride(3));          // [0,3,6,9]
 
     return 0;
 }
