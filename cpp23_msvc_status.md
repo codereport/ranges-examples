@@ -3,11 +3,11 @@
 |`adjacent`|:red_circle:|
 |`adjacent_transform`|:red_circle:|
 |`cartesian_product`|:red_circle: |Issue: https://github.com/microsoft/STL/issues/2923|
-|`chunk`|:green_circle:|
-|`chunk_by`|:green_circle:|
+|`chunk`|:green_circle:| PR: https://github.com/microsoft/STL/pull/2685|
+|`chunk_by`|:green_circle:| PR: https://github.com/microsoft/STL/pull/2565
 |`join_with`|:green_circle: | PR: https://github.com/microsoft/STL/pull/2619|
 |`repeat`|:orange_circle: |PR: https://github.com/microsoft/STL/pull/3142|
-|`slide`|:green_circle:|
+|`slide`|:green_circle:| PR: https://github.com/microsoft/STL/pull/2670 |
 |`stride`|:green_circle: | PR: https://github.com/microsoft/STL/pull/2981|
 |`zip`|:yellow_circle: | PR: https://github.com/microsoft/STL/pull/3035|
 |`zip_transform`|:red_circle:| 
@@ -19,7 +19,7 @@
 * 🟡 - Done but not available on Godbolt yet
 * 🟢 - Done
 
-Godbolt: https://godbolt.org/z/q1hdYzjMe
+Godbolt: https://godbolt.org/z/4fE8GvshY
 
 ```cpp
 #include <iostream>
