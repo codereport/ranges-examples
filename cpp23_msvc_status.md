@@ -19,37 +19,25 @@
 * 🟡 - Done but not available on Godbolt yet
 * 🟢 - Done
 
-Godbolt: https://godbolt.org/z/6oj3d5TnK
+### Godbolt Links
+* MSVC Godbolt: https://godbolt.org/z/6oj3d5TnK
+* GCC  Godbolt: https://godbolt.org/z/Y9v4Peo6K
 
 ```cpp
-#include <iostream>
+#include <array>
 #include <ranges>
-#include <vector>
+
+#include <fmt/ranges.h>
 
 using namespace std::views;
 
-auto print2(auto rng) {
-    for (auto r : rng) {
-        for (auto e : r)
-            std::cout << e << ' ';
-        std::cout << '\n';
-    }
-}
-
-auto print(auto rng) {
-    for (auto e : rng)
-        std::cout << e << ' ';
-    std::cout << '\n';
-}
-
 auto main() -> int {
-    auto const vec = std::vector{0, 0, 1, 1, 2, 2};
+    auto vec = std::array{0, 0, 1, 1, 2, 2};
 
-    print2(iota(0, 5) | chunk(2));            // [[0,1  ], [2,3  ],[5    ]]
-    print2(vec | chunk_by(std::equal_to{}));  // [[0,0  ], [1,1  ],[2,2  ]]
-    print2(iota(0, 5) | slide(3));            // [[0,1,2], [1,2,3],[3,4,5]]
-    print (iota(0, 10) | stride(3));          // [0,3,6,9]
-
+    fmt::print("{}\n", iota(0, 5) | chunk(2));            // [[0, 1], [2, 3], [4]]
+    fmt::print("{}\n", vec | chunk_by(std::equal_to{}));  // [[0, 0], [1, 1], [2, 2]]
+    fmt::print("{}\n", iota(0, 5) | slide(3));            // [[0, 1, 2], [1, 2, 3], [2, 3, 4]]
+    fmt::print("{}\n", iota(0, 10) | stride(3));          // [0, 3, 6, 9]
     return 0;
 }
 ```
