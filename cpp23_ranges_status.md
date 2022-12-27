@@ -15,7 +15,7 @@
 |`stride`|:green_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2981|
 |`zip`|:green_circle:|:yellow_circle: | PR: https://github.com/microsoft/STL/pull/3035|
 |`zip_transform`|:green_circle:|:red_circle:| 
-|`ranges::to`|:red_circle:|:red_circle:|
+|`ranges::to`|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2806 |
 |Formatting|:red_circle:|:red_circle:|
 
 * 🔴 - Not Done
@@ -23,7 +23,7 @@
 * 🟢 - Done (and available on Compiler Explorer)
 
 ### Godbolt Links
-* MSVC Compiler Explorer: https://godbolt.org/z/6oj3d5TnK
+* MSVC Compiler Explorer: https://godbolt.org/z/MxEsf61rG
 * GCC Compiler Explorer: https://godbolt.org/z/4PK3E3Enj
 
 ```cpp
