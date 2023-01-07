@@ -23,7 +23,7 @@
 * 🟢 - Done (and available on Compiler Explorer)
 
 ### Godbolt Links
-* MSVC Compiler Explorer: https://godbolt.org/z/MxEsf61rG
+* MSVC Compiler Explorer: https://godbolt.org/z/TY4Mo7P5o
 * GCC Compiler Explorer: https://godbolt.org/z/4PK3E3Enj
 
 ```cpp
