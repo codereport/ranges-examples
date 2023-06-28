@@ -14,7 +14,7 @@
 |`slide`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2670 |
 |`stride`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2981|
 |`zip`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/3035|
-|`zip_transform`|:green_circle:|:red_circle:|:red_circle:| 
+|`zip_transform`|:green_circle:|:red_circle:|:yellow_circle:| PR: https://github.com/microsoft/STL/pull/3322 |
 |`ranges::to`|:red_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2806 |
 |Formatting|:red_circle:|:red_circle:|:red_circle:|
 
