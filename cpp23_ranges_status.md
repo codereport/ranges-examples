@@ -10,10 +10,10 @@
 |`join_with`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2619|
 |`pairwise`|:green_circle:|:red_circle:|:red_circle:
 |`pairwise_transform`|:green_circle:|:red_circle:|:red_circle:
-|`repeat`|:green_circle:|:red_circle:|:yellow_circle: |PR: https://github.com/microsoft/STL/pull/3142|
+|`repeat`|:green_circle:|:red_circle:|:green_circle: |PR: https://github.com/microsoft/STL/pull/3142|
 |`slide`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2670 |
 |`stride`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2981|
-|`zip`|:green_circle:|:red_circle:|:yellow_circle: | PR: https://github.com/microsoft/STL/pull/3035|
+|`zip`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/3035|
 |`zip_transform`|:green_circle:|:red_circle:|:red_circle:| 
 |`ranges::to`|:red_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2806 |
 |Formatting|:red_circle:|:red_circle:|:red_circle:|
@@ -23,7 +23,7 @@
 * 🟢 - Done (and available on Compiler Explorer)
 
 ### Godbolt Links
-* MSVC Compiler Explorer: https://godbolt.org/z/TY4Mo7P5o
+* MSVC Compiler Explorer: https://godbolt.org/z/67e5xfPrq
 * GCC Compiler Explorer: https://godbolt.org/z/4PK3E3Enj
 
 ```cpp
