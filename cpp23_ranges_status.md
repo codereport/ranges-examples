@@ -25,7 +25,7 @@
 
 ### Godbolt Links
 * MSVC Compiler Explorer: https://godbolt.org/z/8b654v3e1
-* GCC Compiler Explorer: https://godbolt.org/z/hjbKb6jWM
+* GCC Compiler Explorer: https://godbolt.org/z/vsfT6e96b
 
 ```cpp
 #include <array>
@@ -38,7 +38,7 @@ using namespace std::views;
 using namespace std::string_literals;
 
 auto main() -> int {
-    auto nums          = std::array{0, 0, 1, 1, 2, 2};
+    auto const nums    = std::array{0, 0, 1, 1, 2, 2};
     auto const animals = std::array{"cat"s, "dog"s};
 
     fmt::print("{}\n", iota(0, 5) | chunk(2));                           // [[0, 1], [2, 3], [4]]
