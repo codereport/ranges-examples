@@ -25,7 +25,7 @@
 
 ### Godbolt Links
 * MSVC Compiler Explorer: https://godbolt.org/z/8b654v3e1
-* GCC Compiler Explorer: https://godbolt.org/z/vsfT6e96b
+* GCC Compiler Explorer: https://godbolt.org/z/96jG84aeh
 
 ```cpp
 #include <array>
@@ -54,7 +54,7 @@ auto main() -> int {
     fmt::print("{}\n", iota(0, 4) | pairwise_transform(std::plus{}));    // [1, 3, 5]
     fmt::print("{}\n", animals | join_with(','));                        // ['c', 'a', 't', ',', 'd', 'o', 'g']
     fmt::print("{}\n", cartesian_product(iota(0, 2), "AZ"s));            // [(0, 'A'), (0, 'Z'), (1, 'A'), (1, 'Z')]
-    fmt::print("{}\n", enumerate("APL"s));                               // [(0, 'A'), (1, 'P'), (2, 'L')]
+    fmt::print("{}\n", "APL"s | enumerate);                              // [(0, 'A'), (1, 'P'), (2, 'L')]
 
     return 0;
 }
