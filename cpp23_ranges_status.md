@@ -2,13 +2,14 @@
 
 |View/Feature|GCC|Clang|MSVC|MSVC PR|
 |:-:|:-:|:-:|:-:|:-:|
-|`adjacent`|:green_circle:|:red_circle:|:red_circle:|
+|`adjacent`|:green_circle:|:red_circle:|:yellow_circle:| PR: https://github.com/microsoft/STL/pull/3508 |
 |`adjacent_transform`|:green_circle:|:red_circle:|:yellow_circle:| PR: https://github.com/microsoft/STL/pull/3546 |
 |`cartesian_product`|:green_circle:|:red_circle:|:yellow_circle: |PR: https://github.com/microsoft/STL/pull/3561|
 |`chunk`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2685|
 |`chunk_by`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2565
+|`enumerate`|:green_circle:|:red_circle:|:yellow_circle:|PR: https://github.com/microsoft/STL/pull/3472|
 |`join_with`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2619|
-|`pairwise`|:green_circle:|:red_circle:|:red_circle:
+|`pairwise`|:green_circle:|:red_circle:|:yellow_circle: | PR: https://github.com/microsoft/STL/pull/3508 |
 |`pairwise_transform`|:green_circle:|:red_circle:|:yellow_circle: | PR: https://github.com/microsoft/STL/pull/3546 |
 |`repeat`|:green_circle:|:red_circle:|:green_circle: |PR: https://github.com/microsoft/STL/pull/3142|
 |`slide`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2670 |
@@ -24,7 +25,7 @@
 
 ### Godbolt Links
 * MSVC Compiler Explorer: https://godbolt.org/z/8b654v3e1
-* GCC Compiler Explorer: https://godbolt.org/z/4PK3E3Enj
+* GCC Compiler Explorer: https://godbolt.org/z/1Maozd491
 
 ```cpp
 #include <array>
@@ -52,7 +53,8 @@ auto main() -> int {
     fmt::print("{}\n", adjacent_transform<2>(iota(0, 4), std::plus{})); // [1, 3, 5]
     fmt::print("{}\n", pairwise_transform(iota(0, 4), std::plus{}));    // [1, 3, 5]
     fmt::print("{}\n", animals | join_with(','));                       // ['c', 'a', 't', ',', 'd', 'o', 'g']
-    fmt::print("{}\n", cartesian_product(iota(0, 2), iota(2, 4)));      // [(0, 2), (0, 3), (1, 2), (1, 3)]
+    fmt::print("{}\n", cartesian_product(iota(0, 2), "AZ"s));           // [(0, 'A'), (0, 'Z'), (1, 'A'), (1, 'Z')]
+    fmt::print("{}\n", enumerate("APL"s));                              // [(0, 'A'), (1, 'P'), (2, 'L')]
 
     return 0;
 }
