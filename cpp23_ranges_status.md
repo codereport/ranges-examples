@@ -3,13 +3,13 @@
 |View/Feature|GCC|Clang|MSVC|MSVC PR|
 |:-:|:-:|:-:|:-:|:-:|
 |`adjacent`|:green_circle:|:red_circle:|:red_circle:|
-|`adjacent_transform`|:green_circle:|:red_circle:|:red_circle:|
-|`cartesian_product`|:green_circle:|:red_circle:|:red_circle: |Issue: https://github.com/microsoft/STL/issues/2923|
+|`adjacent_transform`|:green_circle:|:yellow_circle:|:red_circle:| PR: https://github.com/microsoft/STL/pull/3546 |
+|`cartesian_product`|:green_circle:|:yellow_circle:|:red_circle: |PR: https://github.com/microsoft/STL/pull/3561|
 |`chunk`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2685|
 |`chunk_by`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2565
 |`join_with`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2619|
 |`pairwise`|:green_circle:|:red_circle:|:red_circle:
-|`pairwise_transform`|:green_circle:|:red_circle:|:red_circle:
+|`pairwise_transform`|:green_circle:|:yellow_circle:|:red_circle: | PR: https://github.com/microsoft/STL/pull/3546 |
 |`repeat`|:green_circle:|:red_circle:|:green_circle: |PR: https://github.com/microsoft/STL/pull/3142|
 |`slide`|:green_circle:|:red_circle:|:green_circle:| PR: https://github.com/microsoft/STL/pull/2670 |
 |`stride`|:green_circle:|:red_circle:|:green_circle: | PR: https://github.com/microsoft/STL/pull/2981|
